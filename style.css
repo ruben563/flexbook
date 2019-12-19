@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  color: #fff;
+  background-color: #5995DA;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-items {
+ /*  border: 1px solid #fff;   For debugging */
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.test1 {
+  margin-left: auto;
+}
+
+.test2 {
+  margin-left: 20px;
+}
+
+header {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+h1.logo{
+  font-family: 'Staatliches', cursive;
+  font-size: 66px;
+  color: #3a5875;
+}
+
+.header-items {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter,
+.social {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+   flex-direction: row;
+   align-items: center;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1;
+}
+
+.footer-one, .footer-three {
+background-color: #5995DA;
+flex: initial;
+width: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  nav{
+    background-color: teal;
+  }
+  
+@media screen and (max-width: 480px) {
+  nav{
+    background-color: crimson;
+  }  
+  
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .nav-item{
+    border: 1px solid white;
+    margin: 0;
+    text-align: center;
+    paddig: 2%;
+    width: 100%;
+  }
+  
+  .header-items {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+  	.header-item{
+      padding: 0px;
+      text-align: center;
+      width: 100%; 
+  	} 
+  
+  .filter{
+    order: 1;
+  }
+  
+  .social{
+    order: 2;
+  }
+  
+  footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-item {
+  width: 100%;
+}
+
+  
+}
